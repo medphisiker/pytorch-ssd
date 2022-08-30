@@ -1,0 +1,2 @@
+формат датасета Pascal VOC
+https://chowdera.com/2022/126/202205091017580600.html
