@@ -102,8 +102,9 @@ parser.add_argument('--checkpoint-folder', '--model-dir', default='models/',
                     help='Directory for saving checkpoint models')
 parser.add_argument('--log-level', default='info', type=str,
                     help='Logging level, one of:  debug, info, warning, error, critical (default: info)')
-                                        
-args = parser.parse_args()
+
+fake_args = ['--data=data/fish','--model-dir=models/fish', '--batch-size=4', '--epochs=200']                                   
+args = parser.parse_args(fake_args)
 
 logging.basicConfig(stream=sys.stdout, level=getattr(logging, args.log_level.upper(), logging.INFO),
                     format='%(asctime)s - %(message)s', datefmt="%Y-%m-%d %H:%M:%S")
