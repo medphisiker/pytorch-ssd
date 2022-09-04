@@ -103,7 +103,12 @@ parser.add_argument('--checkpoint-folder', '--model-dir', default='models/',
 parser.add_argument('--log-level', default='info', type=str,
                     help='Logging level, one of:  debug, info, warning, error, critical (default: info)')
 
-fake_args = ['--data=data/fish','--model-dir=models/fish', '--batch-size=4', '--epochs=200']                                   
+fake_args = ['--data=/home/admin-gpu/Downloads/data/VEFPoolDataset',
+             '--model-dir=models/fish',
+             '--batch-size=32',
+             '--num-workers=12',
+             '--epochs=150']
+                                
 args = parser.parse_args(fake_args)
 
 logging.basicConfig(stream=sys.stdout, level=getattr(logging, args.log_level.upper(), logging.INFO),
