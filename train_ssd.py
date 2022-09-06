@@ -107,7 +107,7 @@ fake_args = ['--data=/home/admin-gpu/Downloads/data/VEFPoolDataset',
              '--model-dir=models/fish',
              '--batch-size=32',
              '--num-workers=12',
-             '--epochs=150']
+             '--epochs=250']
                                 
 args = parser.parse_args(fake_args)
 
