@@ -34,8 +34,8 @@ parser.add_argument('--model-dir', type=str, default='',
                     help="directory to look for the input PyTorch model in, and export the converted ONNX model to (if --output doesn't specify a directory)")
 
 # '--input=models/fish/mb1-ssd-Epoch-29-Loss-1.515195776939392.pth'
-fake_arg = ['--model-dir=models/fish',
-            '--labels=models/fish/labels.txt',
+fake_arg = ['--model-dir=models/shells',
+            '--labels=models/shells/labels.txt',
             '--width=300',
             '--height=300',
             '--batch-size=1']
